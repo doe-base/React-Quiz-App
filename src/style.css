@@ -1,0 +1,168 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F7FB;;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+=============== 
+Global Text Styles
+===============
+*/
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.321em;
+    color: #293264;
+    font-family: 'Karla', sans-serif;
+}
+p{
+    font-size: 1.2rem;
+    color: #293264;
+    margin-bottom: 1em;
+}
+
+
+/*
+=============== 
+Classes
+===============
+*/
+
+.welcome-btn{
+    width: 193px;
+    height: 52px;
+    background: rgb(77, 91, 158);
+    border-radius: 15px;
+    border: 2.5px solid black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.welcome-btn:hover{
+    background: rgba(77, 91, 158, 0.6);
+}
+
+.background-design{
+    position: absolute;
+    top: -8%;
+    right: -8%;
+    background: #FFFAD1;
+    transform: rotate(-128.49deg);
+    height: 235.00000320538274px;
+    width: 297.00000405105817px;
+    border-radius: 4em;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-design2{
+    position: absolute;
+    bottom: -8%;
+    left: -8%;
+    background: #DEEBF8;
+    transform: rotate(-130.49deg);
+    height: 235.00000320538274px;
+    width: 297.00000405105817px;
+    border-radius: 12em;
+    overflow: hidden;
+    z-index: -1;
+} 
+
+
+.container-div{
+    margin: 0 auto;
+    margin-top: 8em;
+    padding: 8em;
+}
+
+
+
+/*
+=============== 
+Quiz Section
+===============
+*/
+
+
+section{
+    margin: 0 auto;
+    max-width: 750px;
+    text-align:left;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: #293264;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+
+section > p{
+    margin-bottom: 0.41rem;
+}
+section > h3{
+    margin-bottom: 0.41rem;
+    margin-top: 0.41rem;
+}
+section > hr{
+    margin-bottom: 0.9rem;
+}
+
+.norm, .lite {
+    padding: 0.5rem  1rem;
+    border-radius: 9.94239px;
+    border: 1.5px solid #293264;
+    margin-right: 1.5em;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #293264;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.lite{
+    background-color: #a5acd380;
+}
+
+section > button:hover{
+    background-color: #a5acd380;
+}
+.check-btn{
+    margin: 0 auto;
+}
+
+
+/*
+=============== 
+Media Quaries
+===============
+*/
+
+
+@media screen and (max-width: 750px) {
+    .background-design,.background-design2 {
+        display: none;
+    }
+    body{
+        overflow: visible;
+    }
+  }
