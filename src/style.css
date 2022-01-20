@@ -1,25 +1,29 @@
-/*
-=============== 
-Global Styles
-===============
-*/
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
+/* Intro Section */
 
 body{
-    background-color: #F5F7FB;;
     width: 100vw;
     height: 100vh;
-    font-family: 'Inter', sans-serif;
+    background-color: #F5F7FB;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 16em 0; 
+    font-family: Inter, sans-serif;
+    font-size: 4px;
+}
+
+.intro-container{
     text-align: center;
 }
+
+.norm{
+    background: #9debb2;
+}
+.hold{
+    background: transparent;
+}
+
 
 /*
 =============== 
@@ -62,31 +66,6 @@ Classes
     background: rgba(77, 91, 158, 0.6);
 }
 
-.background-design{
-    position: absolute;
-    top: -8%;
-    right: -8%;
-    background: #FFFAD1;
-    transform: rotate(-128.49deg);
-    height: 235.00000320538274px;
-    width: 297.00000405105817px;
-    border-radius: 4em;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.background-design2{
-    position: absolute;
-    bottom: -8%;
-    left: -8%;
-    background: #DEEBF8;
-    transform: rotate(-130.49deg);
-    height: 235.00000320538274px;
-    width: 297.00000405105817px;
-    border-radius: 12em;
-    overflow: hidden;
-    z-index: -1;
-} 
 
 
 .container-div{
@@ -127,7 +106,7 @@ section > hr{
     margin-bottom: 0.9rem;
 }
 
-.norm, .lite {
+button {
     padding: 0.5rem  1rem;
     border-radius: 9.94239px;
     border: 1.5px solid #293264;
@@ -139,9 +118,6 @@ section > hr{
     cursor: pointer;
 }
 
-.lite{
-    background-color: #a5acd380;
-}
 
 section > button:hover{
     background-color: #a5acd380;
@@ -151,18 +127,6 @@ section > button:hover{
 }
 
 
-/*
-=============== 
-Media Quaries
-===============
-*/
-
-
-@media screen and (max-width: 750px) {
-    .background-design,.background-design2 {
-        display: none;
-    }
-    body{
-        overflow: visible;
-    }
-  }
+.quiz-container{
+    text-align: center;
+}
